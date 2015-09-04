@@ -1,0 +1,18 @@
+﻿@using AngularAndTypeScriptExample.Util
+@model List<AngularAndTypeScriptExample.Models.Conference>
+@{
+    ViewBag.Title = "Home Page";
+}
+<div ng-controller="Conference as conference">
+    <div data-ng-repeat="conference in conference.conferences">
+        <app-conference-thumbnail conference="conference"></app-conference-thumbnail>
+    </div>
+    @Html.ActionLink("Create New Conference", "Create", "Home", null, new { @class = "btn btn-info float-right" })
+</div> <!-- /conference -->
+
+@section scripts {
+    <script type="text/javascript">
+        angular.module("app.conferences").value("app.conferences.data", @Html.Raw(CamelCaseJsonConvert.SerializeObject(Model)));
+    </script>
+}
+

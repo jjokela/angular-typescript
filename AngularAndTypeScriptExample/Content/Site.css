@@ -1,0 +1,13 @@
+﻿.body-content {
+    padding-top: 100px;
+}
+
+.padding-top {
+  padding-top: 10px; }
+
+.float-right {
+    float: right;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, x-ng-cloak {
+  display: none; }
