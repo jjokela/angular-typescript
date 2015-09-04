@@ -4,21 +4,18 @@
     interface IConferenceScope {
         // Variables
         conferences: server.Conference[];
-        dataservice: app.services.IDataService;
     }
 
     class ConferenceController implements IConferenceScope {
 
         // Variables
         conferences: server.Conference[];
-        dataservice: app.services.IDataService;
 
-        static $inject = ['dataservice', 'app.conferences.data'];
+        static $inject = ['app.conferences.data'];
 
-        constructor(dataservice: app.services.IDataService, data: server.Conference[], toastr: Toastr) {
+        constructor(data: server.Conference[], dataservice: app.services.IDataService) {
             var vm = this;            
-            vm.dataservice = dataservice;
-            vm.conferences = data;            
+            vm.conferences = data;                       
         }
     }
     angular

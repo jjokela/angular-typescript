@@ -4,12 +4,11 @@ var app;
     (function (conferences) {
         'use strict';
         var ConferenceController = (function () {
-            function ConferenceController(dataservice, data, toastr) {
+            function ConferenceController(data, dataservice) {
                 var vm = this;
-                vm.dataservice = dataservice;
                 vm.conferences = data;
             }
-            ConferenceController.$inject = ['dataservice', 'app.conferences.data'];
+            ConferenceController.$inject = ['app.conferences.data'];
             return ConferenceController;
         })();
         angular

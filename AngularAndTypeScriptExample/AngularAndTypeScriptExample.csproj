@@ -987,6 +987,8 @@
     <Content Include="Scripts\select.js" />
     <Content Include="Scripts\select.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="test\testitesti.js" />
+    <None Include="test\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
