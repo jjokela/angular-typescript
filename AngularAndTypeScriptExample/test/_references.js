@@ -17,8 +17,10 @@
 
 /// <reference path="../app/services/data.services.js" />
 /// <reference path="../app/components/components.directive.js" />
+/// <reference path="../app/components/conference.directive.html" />
 
 /// <reference path="../app/conferences/conferences.controller.js" />
 /// <reference path="../app/conferences/conference-edit.controller.js" />
 /// <reference path="../app/conferences/conference-details.controller.js" />
 /// <reference path="../app/conferences/conference-create.controller.js" />
+

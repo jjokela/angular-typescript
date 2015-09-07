@@ -1,15 +1,8 @@
 ﻿/// <reference path="_references.js" />
 describe('Conferences controller', function () {
-    var controller, q, rootScope, dataServiceMock, loggerMock;
+    var controller, rootScope, dataServiceMock;
     beforeEach(function () {
         module('app');
-        //dataServiceMock = jasmine.createSpyObj('dataservice', ['postTraps', 'deleteTrap']);
-        //loggerMock = jasmine.createSpyObj('logger', ['success']);
-
-        // handle html5 confirm
-        //spyOn(window, 'confirm').and.callFake(function () {
-        //    return true;
-        //});
 
         module(function ($provide) {
             $provide.value('dataservice', dataServiceMock);            
@@ -24,18 +17,11 @@ describe('Conferences controller', function () {
         });
     });
 
-    beforeEach(inject(function ($controller, $rootScope, _$q_) {
+    beforeEach(inject(function ($controller, $rootScope) {
         controller = $controller('Conference');
         $rootScope.$apply();        
         rootScope = $rootScope;
     }));
-    //beforeEach(inject(function ($controller, $rootScope, _$q_) {
-    //    controller = $controller('Conference');
-    //    $rootScope.$apply();
-    //    $q = _$q_;
-    //    rootScope = $rootScope;
-
-    //}));
 
     it('should create "conferences" model with one conference', function () {
 
