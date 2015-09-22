@@ -42,3 +42,4 @@ var app;
             .controller('ConferenceCreate', ConferenceCreateController);
     })(conferences = app.conferences || (app.conferences = {}));
 })(app || (app = {}));
+//# sourceMappingURL=conference-create.controller.js.map

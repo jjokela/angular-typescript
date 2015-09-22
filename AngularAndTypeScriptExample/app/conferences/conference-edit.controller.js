@@ -42,3 +42,4 @@ var app;
             .controller('ConferenceEdit', ConferenceEditController);
     })(conferences = app.conferences || (app.conferences = {}));
 })(app || (app = {}));
+//# sourceMappingURL=conference-edit.controller.js.map

@@ -19,3 +19,4 @@ var app;
             .directive('appConferenceThumbnail', ConferenceThumbnailDirective.instance);
     })(components = app.components || (app.components = {}));
 })(app || (app = {}));
+//# sourceMappingURL=conference.directive.js.map
