@@ -16,4 +16,3 @@ var app;
             .controller('Conference', ConferenceController);
     })(conferences = app.conferences || (app.conferences = {}));
 })(app || (app = {}));
-//# sourceMappingURL=conferences.controller.js.map

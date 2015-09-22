@@ -72,4 +72,3 @@ var app;
             .factory('dataservice', factory);
     })(services = app.services || (app.services = {}));
 })(app || (app = {}));
-//# sourceMappingURL=data.services.js.map

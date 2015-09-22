@@ -7,7 +7,7 @@
         }
 
         restrict = 'E';
-        templateUrl = '../app/components/conference.directive.html';
+        templateUrl = 'app/components/conference.directive.html';
         
         scope = { conference: "=conference"};
     }

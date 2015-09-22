@@ -6,7 +6,7 @@ var app;
         var ConferenceThumbnailDirective = (function () {
             function ConferenceThumbnailDirective() {
                 this.restrict = 'E';
-                this.templateUrl = '../app/components/conference.directive.html';
+                this.templateUrl = 'app/components/conference.directive.html';
                 this.scope = { conference: "=conference" };
             }
             ConferenceThumbnailDirective.instance = function () {
@@ -19,4 +19,3 @@ var app;
             .directive('appConferenceThumbnail', ConferenceThumbnailDirective.instance);
     })(components = app.components || (app.components = {}));
 })(app || (app = {}));
-//# sourceMappingURL=conference.directive.js.map

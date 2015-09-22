@@ -31,4 +31,3 @@ var app;
             .controller('ConferenceDetails', ConferenceDetailsController);
     })(conferences = app.conferences || (app.conferences = {}));
 })(app || (app = {}));
-//# sourceMappingURL=conference-details.controller.js.map
