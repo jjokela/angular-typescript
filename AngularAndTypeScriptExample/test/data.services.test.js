@@ -1,5 +1,4 @@
-﻿/// <reference path="_references.js" />
-describe('Dataservice', function () {
+﻿describe('Dataservice', function () {
     var $httpBackend, loggerMock, mockDataservice;
     beforeEach(function () {
         module('app');       

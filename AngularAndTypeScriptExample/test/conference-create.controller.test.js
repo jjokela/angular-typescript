@@ -1,5 +1,4 @@
-﻿/// <reference path="_references.js" />
-describe('ConferenceCreate controller', function () {
+﻿describe('ConferenceCreate controller', function () {
     var controller, $q, $timeout, rootScope, dataServiceMock, loggerMock, windowMock;
     beforeEach(function () {
         module('app');

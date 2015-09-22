@@ -1,5 +1,4 @@
-﻿/// <reference path="_references.js" />
-describe('Conferences controller', function () {
+﻿describe('Conferences controller', function () {
     var controller, rootScope, dataServiceMock;
     beforeEach(function () {
         module('app');
