@@ -11,7 +11,6 @@ namespace AngularAndTypeScriptExample.Controllers
     public class HomeController : Controller
     {
         private ConferenceContext db = new ConferenceContext();
-        [Route("Index")]
         public ActionResult Index()
         {
             // load also Speaker

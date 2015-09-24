@@ -7,9 +7,21 @@
         }
 
         restrict = 'E';
+        require = 'ngModel';
+
+        link(scope, element, attrs, ngModel) {            
+            
+            //Validation code goes here
+            // This is just an example of how to do custom validation
+            //console.log(scope.$id);
+            if (scope.$id === 13) {
+                ngModel.$setValidity('unique', false);
+            }
+        }
+
         templateUrl = 'app/components/conference.directive.html';
         
-        scope = { conference: "=conference"};
+        scope = { conference: "=ngModel"};
     }
 
     angular
